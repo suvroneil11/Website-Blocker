@@ -4,9 +4,9 @@
 import time
 from datetime import datetime as dt
 
-hosts_path="/etc/hosts"																	#Change the path of the hosts file according to your host file location
-redirect="127.0.0.1"																	#This is the local ip address of the user which is used for re-routing the user through this so that nothing will open
-website_list=["www.facebook.com","facebook.com","gmail.com","www.gmail.com"]			#Enter names of the websites needed to be blocked in the same format as in this list
+hosts_path="/etc/hosts"														#Change the path of the hosts file according to your host file location
+redirect="127.0.0.1"														#This is the local ip address of the user which is used for re-routing the user through this so that nothing will open
+website_list=["www.facebook.com","facebook.com","gmail.com","www.gmail.com"]#Enter names of the websites needed to be blocked in the same format as in this list
 
 while True:																				#Change the values of 8 and 16 accordingly as 8 is the starting time and 16 is the ending time
     if dt(dt.now().year,dt.now().month,dt.now().day,8) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,16):	
